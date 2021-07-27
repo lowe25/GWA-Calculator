@@ -5,19 +5,22 @@
 body{
     font-family: Arial;
 }
+.container{
+    min-height: 847px;
+}
 .navbar{
-    position: relative;
-    top: 51%;
-    height: 150px;
+    height: 80px;
+    padding-top: 10px;
     text-align: center;
     background-color: pink;
 }
 .units-subs,
 .subjects
 {
+    width: 100%;
     display: grid;
-    justify-content: center;
     align-items: center;
+    text-align: center;
     grid-template-columns: repeat(1, auto);
 }
 .buttons{
@@ -28,16 +31,26 @@ body{
 label{
     padding: 10px;
 }
+/*Textboxes*/
 input[type="button"]{
     height: 40px;
     width: 232px;
     background-color: #f9e5ef;
-    color: #fffff;
+    color: #000000;
     border: none;
     font-size: 16px;
 }
-
 input[type="text"]{
     height: 30px;
     width: 250px;
 }
+
+/*Footer*/
+footer{
+    height: 80px;
+    text-align: center;
+    background-color: #000000;
+    color: #f9e5ef;
+}
+
+
