@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial;
+}
+.navbar{
+    position: relative;
+    top: 51%;
+    height: 150px;
+    text-align: center;
+    background-color: pink;
+}
+.units-subs,
+.subjects
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(1, auto);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+label{
+    padding: 10px;
+}
+input[type="button"]{
+    height: 40px;
+    width: 232px;
+    background-color: #f9e5ef;
+    color: #fffff;
+    border: none;
+    font-size: 16px;
+}
+
+input[type="text"]{
+    height: 30px;
+    width: 250px;
+}
