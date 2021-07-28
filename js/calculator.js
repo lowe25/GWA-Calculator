@@ -26,7 +26,7 @@ let TotalGwa;
 let answer;
 
 function Compute(){
-Units = txtUnits / txtSubjects;
+(Units) = txtUnits / txtSubjects;
 if(txtSubjects > 6){
 let grade1 = txtSub1 * Units;
 let grade2 = txtSub2 * Units;
@@ -35,12 +35,13 @@ let grade4 = txtSub4 * Units;
 let grade5 = txtSub5 * Units;
 let grade6 = txtSub6 * Units;
 let grade7 = txtSub7 * Units;
-WeightedRating = (grade1) + (grade2) + (grade3) + (grade4) +  (grade5) + (grade6) + (grade7);
+WeightedRating = parseFloat(grade1) + parseFloat(grade2) + parseFloat(grade3) + parseFloat(grade4) +  parseFloat(grade5) + parseFloat(grade6) + parseFloat(grade7);
 
-totalUnits = Units * txtSubjects;
-WeightedAverage = WeightedRating / totalUnits;
-TotalGwa = WeightedAverage.toFixed(2);
-answer = document.getElementById("gwa").innerHTML=TotalGwa;
+(totalUnits) = Units * txtSubjects;
+(WeightedAverage) = WeightedRating / totalUnits;
+(TotalGwa) = WeightedAverage.toFixed(2);
+(answer) = document.getElementById("gwa").innerHTML=TotalGwa;
+
 }else{
 let grade1 = txtSub1 * Units;
 let grade2 = txtSub2 * Units;
@@ -48,13 +49,13 @@ let grade3 = txtSub3 * Units;
 let grade4 = txtSub4 * Units;
 let grade5 = txtSub5 * Units;
 let grade6 = txtSub6 * Units;
-WeightedRating = (grade1) + (grade2) + (grade3) + (grade4) +  (grade5) + (grade6);
-totalUnits = Units * txtSubjects;
-WeightedAverage = WeightedRating / totalUnits;
-let txtSub7 = parseFloat(document.querySelector(".txt-sub7").disabled = true);
+WeightedRating = parseFloat(grade1) + parseFloat(grade2) + parseFloat(grade3) + parseFloat(grade4) +  parseFloat(grade5) + parseFloat(grade6);
 
-TotalGwa = WeightedAverage.toFixed(2);
-answer = document.getElementById("gwa").innerHTML=TotalGwa; 
+(totalUnits) = Units * txtSubjects;
+(WeightedAverage) = WeightedRating / totalUnits;
+let txtSub7 = parseFloat(document.querySelector(".txt-sub7").disabled = true);
+(TotalGwa) = WeightedAverage.toFixed(2);
+(answer) = document.getElementById("gwa").innerHTML=TotalGwa;
 }
 }
 
